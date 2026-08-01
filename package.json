@@ -1,0 +1,15 @@
+{
+  "name": "cloudflare-workflow-step-result-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "cf-typegen": "wrangler types",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "~7.0.2",
+    "wrangler": "^4.118.0"
+  }
+}

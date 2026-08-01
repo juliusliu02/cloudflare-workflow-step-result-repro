@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "workflow-step-result-repro",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-07-31",
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    },
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 1
+    }
+  },
+  "workflows": [
+    {
+      "binding": "STEP_RESULT_PROBE",
+      "name": "workflow-step-result-repro",
+      "class_name": "StepResultProbeWorkflow"
+    }
+  ]
+}
